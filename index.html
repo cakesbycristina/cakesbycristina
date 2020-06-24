@@ -1,0 +1,245 @@
+<style>
+html{
+  background: lavender;
+}
+#nav {
+    position: absolute;
+    left: 0px;
+    height: 40px;
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+}
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+#nav ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+#nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    color: green;
+    text-align: center;
+    font-size: 110%;
+}
+.he{
+  display: block;
+  font-family: cursive;
+  color: green;
+  text-align: center;
+}
+.he2{
+  display: block;
+  font-family: cursive;
+  color: green;
+  text-align: center;
+  font-size: 40px;
+}
+.abt{
+  display: block;
+  font-family: cursive;
+  color: green;
+  text-align: center;
+  font-size: 20px;
+}
+p{
+  font-family: cursive;
+  display: block;
+  color: green;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  letter-spacing: 1px;
+}
+.img{
+  display: block;
+  height: 50%;
+  width: auto;
+  border: 5px solid;
+  border-radius: 8px;
+  border-color: white;
+  border-width: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+}
+.cris{
+  display: block;
+  height: 50%;
+  width: auto;
+  border: 5px solid;
+  border-radius: 8px;
+  border-color: white;
+  border-width: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+
+}
+.gall{
+  display: block;
+  height: 50%;
+  width: auto;
+  border: 5px solid;
+  border-radius: 8px;
+  border-color: white;
+  border-width: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: cursive;
+}
+
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: cursive;
+  word-spacing: 2px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+label{
+  font-family: cursive;
+  color: green;
+}
+a:hover{
+  background-color: lavender;
+}
+.insta{
+  display: block;
+  height: 8%;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+.copyrightinfo{
+  font-family: georgia;
+  display: block;
+  color: green;
+  font-size: 10px;
+  text-align: right;
+  margin-left: 100px;
+  margin-right: 10px;
+  
+}
+</style>
+
+<!DOCTYPE html>
+<html>
+<title>Cakes by Cristina</title>
+<h1 class="he" id="home">Cakes by Cristina</h1>
+<div id="nav">
+    <ul>
+        <li><a href="#home">Home</a>
+        </li>
+        <li><a href="#order">Order</a>
+        </li>
+        <li><a href="#contact">Contact</a>
+        </li>
+        <li><a href="#about">About</a>
+        </li>
+        <li><a href="#gallery">Gallery</a>
+        </li>
+    </ul>
+</div>
+<div>
+  <img src="cake1.png" class = "img"></img>
+</div>
+<div class="container">
+  <h1 class="he2" id="order">Place an Order!</h1>
+  <form action="https://formspree.io/mknqzlkv" method="POST">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="first" placeholder="Your name.." required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="last" placeholder="Your last name.." required>
+
+    <label for="number">Phone Number</label>
+    <input type="text" id="phone number" placeholder="(xxx)-xxx-xxxx" required name="num">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" placeholder="me@gmail.com" required="" name="email">
+
+    <label for="corc">Cake or Cupcakes?</label>
+    <select id="corc" name="Cake or Cupcakes?" required="">
+      <option value="cake">Cake</option>
+      <option value="cupcakes">Cupcakes</option>
+    </select>
+
+    <label>How Many?</label>
+      <input for="count" type="text" placeholder="Enter a number..." required name="count">
+
+    <label for="inst">Instructions</label>
+    <textarea id="inst" name="instructions" placeholder="Please include type, frosting, design, and any other special requests!" style="height:150px" required=""></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+<div>
+  <h1 class="he2" id="contact">Contact Me!</h1>
+  <div class="abt">cristina.m.escajadillo@gmail.com</div>
+  <div class="abt"><a href="https://www.instagram.com/cakesbycristina/" target="_blank"><img src="insta.png" class="insta"></a> </div>
+</div>
+<div>
+  <h1 class="he2" id="about">About Me<h1>
+  <img src="cris.png" class="cris"></img>
+  <p>My name is Cristina Escajadillo and I have been baking since the day my mom allowed me in the kitchen! Right now, I am a sophomore at the University of Notre Dame thinking about majoring in design and economics. If you have any questions please don't hesitate to reach out!!</p>
+</div>
+<div>
+	<h1 class="he2" id="gallery">Gallery</h1>
+	<img src="cake2.png" class="gall"></img>
+	<img src="cake3.png" class="gall"></img>
+	<img src="cake4.png" class="gall"></img>
+	<img src="cake5.png" class="gall"></img>
+	<a href="https://www.instagram.com/cakesbycristina/" target="_blank"><img src="insta.png" class="insta"></a>
+</div>
+<h1></h1>
+<div id="nav">
+    <ul>
+        <li><a href="#home">Back to Top</a>
+        </li>
+    </ul>
+</div>
+<div>
+	<h1>-</h1>
+	<p class="copyrightinfo">Copyright 2020 Mac McLean</p>
+</div>
+</html>
+
